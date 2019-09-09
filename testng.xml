@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- TestNG Documentation: http://testng.org/doc/documentation-main.html -->
+<!-- Change "false" to "tests", "methods", "classes" or "instances" for running in parallel. See more details in the TestNG documentation. -->
+<suite name="TestSuite" parallel="false" verbose="2">
+
+    <listeners>
+        <listener class-name="ExtentReporterNG" />
+    </listeners>
+
+    <test name="AppTest">
+        <parameter name="uri" value="https://www.boxytest.com/rest/default/V1/guest-carts/4c3dff414546fb4be2dacc3e9895416f/shipping-information" />
+
+        <classes>
+            <class name="AppTest">
+                <methods>
+                    <include name="verifyTaxRate"/>
+                    <!-- <exclude name=".*MethodsToExclude.*"/> -->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="43" started-at="2019-09-05T21:22:53Z" finished-at="2019-09-05T21:22:53Z">
+    <groups>
+    </groups>
+    <test name="AppTest" duration-ms="43" started-at="2019-09-05T21:22:53Z" finished-at="2019-09-05T21:22:53Z">
+      <class name="AppTest">
+        <test-method status="FAIL" signature="verifyTaxRate(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:AppTest@3d24753a]" name="verifyTaxRate" duration-ms="24" started-at="2019-09-05T21:22:53Z" data-provider="Taxrate" finished-at="2019-09-05T21:22:53Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: verifyTaxRate([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) NM,(java.lang.String) 87001,(java.lang.String) SANDOVAL COUNTY,(java.lang.String) 0.05125,(java.lang.String) 0.06375,(java.lang.String) 0.0125,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 4,(java.lang.String) 42]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: verifyTaxRate([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) NM,(java.lang.String) 87001,(java.lang.String) SANDOVAL COUNTY,(java.lang.String) 0.05125,(java.lang.String) 0.06375,(java.lang.String) 0.0125,(java.lang.String) 0,(java.lang.String) 0,(java.lang.String) 4,(java.lang.String) 42]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTaxRate -->
+      </class> <!-- AppTest -->
+    </test> <!-- AppTest -->
+  </suite> <!-- TestSuite -->
+</testng-results>

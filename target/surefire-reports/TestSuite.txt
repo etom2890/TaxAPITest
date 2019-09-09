@@ -1,0 +1,144 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 35, Errors: 0, Skipped: 0, Time elapsed: 2.647 s <<< FAILURE! - in TestSuite
+verifyTaxRate(AppTest)  Time elapsed: 0.986 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.012 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
+verifyTaxRate(AppTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.IllegalStateException: Target host is null
+	at AppTest.verifyTaxRate(AppTest.java:72)
+
