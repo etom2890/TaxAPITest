@@ -43,7 +43,7 @@ public class AppTest extends BasicFuctions {
         // Specify the base URL to the RESTful web service
         //setURI(uri);
         String fileName = System.getProperty("fileName");
-         System.out.println(fileName);
+        // System.out.println(fileName);
         RestAssured.baseURI =fileName; //"https://www.boxycharm.com/rest/default/V1/guest-carts/170ec3410ada340636eacaabe7fc47e8/shipping-information";
         //"https://www.boxypreprod.com/rest/default/V1/guest-carts/2c59ebf17f877a03e3f7c6255d63c73b/shipping-information";
         //"https://www.boxytest.com/rest/default/V1/guest-carts/4c3dff414546fb4be2dacc3e9895416f/shipping-information";
@@ -89,8 +89,9 @@ public class AppTest extends BasicFuctions {
         //System.out.println(taxExpectedDouble);
         //System.out.println(taxAmountDouble);
         //System.out.println(taxExpected);
-        Assert.assertEquals(taxRate.toString(),taxExpectedDouble);
-        System.out.println("Expected Rate is : "+ taxExpectedDouble +" , " + "Tax Actual is " + taxRate.toString() + "for zip code" + postalCode + "for state" + regionCode );
+        Assert.assertEquals(taxRate.toString(),taxExpectedDouble,"Expected Rate is : "+ taxExpectedDouble +" , " + "Tax Actual is :  " + taxRate.toString() + " for zip code " + postalCode + " for state " + regionCode);
+
+       // System.out.println("Expected Rate is : "+ taxExpectedDouble +" , " + "Tax Actual is :  " + taxRate.toString() + " for zip code " + postalCode + " for state " + regionCode );
         //given().log().uri();
 
 
