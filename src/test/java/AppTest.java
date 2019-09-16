@@ -32,7 +32,7 @@ public class AppTest extends BasicFuctions {
 
     @Test(dataProvider = "Taxrate")
 
-    public void verifyTaxRate(String RegionCode, String postalCode, String regionName, String StateRate, String taxAmount, String countryRate,
+    public void verifyTaxRate(String regionCode, String postalCode, String regionName, String StateRate, String taxAmount, String countryRate,
                               String cityRate, String specialRate, String riskLevel, String regionId) throws JSONException {
        /* try {
             DataClass.getCSVData("C:\\Users\\enlil.tom\\Documents\\sd-2677-run\\TAXRATES_ZIP5_NM201906.csv");
@@ -52,7 +52,7 @@ public class AppTest extends BasicFuctions {
         JSONObject newObject = new JSONObject();
         newObject.put("countryId", "US");
         newObject.put("regionId", regionId);
-        newObject.put("regionCode", RegionCode);
+        newObject.put("regionCode", regionCode);
         //newObject.put("region",region);
         newObject.put("postcode", postalCode);
 
@@ -90,7 +90,7 @@ public class AppTest extends BasicFuctions {
         //System.out.println(taxAmountDouble);
         //System.out.println(taxExpected);
         Assert.assertEquals(taxRate.toString(),taxExpectedDouble);
-        System.out.println("Expected Rate is : "+ taxExpectedDouble +" , " + "Tax Actual is " + taxRate.toString());
+        System.out.println("Expected Rate is : "+ taxExpectedDouble +" , " + "Tax Actual is " + taxRate.toString() + "for zip code" + postalCode + "for state" + regionCode );
         //given().log().uri();
 
 
