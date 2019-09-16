@@ -2,8 +2,9 @@ import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.openqa.selenium.json.Json;
 
-public class BasicFuctions {
+public class BasicFuctions  {
     public double getTaxRate(JSONObject object) throws JSONException {
         double  taxrate;
 
@@ -18,8 +19,30 @@ public class BasicFuctions {
 
     }
 
-    public void prepareJsonObject(){
+    public JSONObject prepareJsonObject(String regionCode, String postalCode, String regionId) throws JSONException {
 
 
+        JSONObject newObject = new JSONObject();
+        newObject.put("countryId", "US");
+        newObject.put("regionId", regionId);
+        newObject.put("regionCode", regionCode);
+        newObject.put("postcode", postalCode);
+
+
+
+
+        return newObject;
+    }
+
+
+    public JSONObject prepareJsonObject(JSONObject object) throws JSONException {
+
+        JSONObject shippingObject = new JSONObject();
+        shippingObject.put("shipping_address", object);
+        shippingObject.put("billing_address", object);
+        shippingObject.put("shipping_method_code", "boxycharm");
+        shippingObject.put("shipping_carrier_code", "boxycharm");
+
+        return shippingObject;
     }
 }

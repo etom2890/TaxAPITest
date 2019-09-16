@@ -34,39 +34,36 @@ public class AppTest extends BasicFuctions {
 
     public void verifyTaxRate(String regionCode, String postalCode, String regionName, String StateRate, String taxAmount, String countryRate,
                               String cityRate, String specialRate, String riskLevel, String regionId) throws JSONException {
-       /* try {
-            DataClass.getCSVData("C:\\Users\\enlil.tom\\Documents\\sd-2677-run\\TAXRATES_ZIP5_NM201906.csv");
-        } catch (java.io.IOException e) {
-            e.printStackTrace();
-        } */
+
         double taxAmountDouble = Double.parseDouble(taxAmount);
-        // Specify the base URL to the RESTful web service
-        //setURI(uri);
         String fileName = System.getProperty("fileName");
         // System.out.println(fileName);
-        RestAssured.baseURI =fileName; //"https://www.boxycharm.com/rest/default/V1/guest-carts/170ec3410ada340636eacaabe7fc47e8/shipping-information";
+        RestAssured.baseURI =fileName;
+        //"https://www.boxycharm.com/rest/default/V1/guest-carts/170ec3410ada340636eacaabe7fc47e8/shipping-information";
         //"https://www.boxypreprod.com/rest/default/V1/guest-carts/2c59ebf17f877a03e3f7c6255d63c73b/shipping-information";
         //"https://www.boxytest.com/rest/default/V1/guest-carts/4c3dff414546fb4be2dacc3e9895416f/shipping-information";
         //"";
         RequestSpecification request = given().contentType("application/json");
-        JSONObject newObject = new JSONObject();
-        newObject.put("countryId", "US");
+
+        JSONObject newObject = prepareJsonObject(regionCode,postalCode,regionId);
+      /*  newObject.put("countryId", "US");
         newObject.put("regionId", regionId);
         newObject.put("regionCode", regionCode);
         //newObject.put("region",region);
-        newObject.put("postcode", postalCode);
+        newObject.put("postcode", postalCode); */
 
 
-        JSONObject shippingObject = new JSONObject();
-        shippingObject.put("shipping_address", newObject);
+        JSONObject shippingObject = prepareJsonObject(newObject);
+                //new JSONObject();
+       /*  shippingObject.put("shipping_address", newObject);
         shippingObject.put("billing_address", newObject);
         shippingObject.put("shipping_method_code", "boxycharm");
-        shippingObject.put("shipping_carrier_code", "boxycharm");
+        shippingObject.put("shipping_carrier_code", "boxycharm"); */
 
         JSONObject address = new JSONObject();
-
         address.put("addressInformation", shippingObject);
-        JSONArray newArray = new JSONArray();
+
+        // JSONArray newArray = new JSONArray();
         request.body(address.toString());
         //.out.println(address.toString());
         Response response= request.post();
@@ -90,6 +87,7 @@ public class AppTest extends BasicFuctions {
         //System.out.println(taxAmountDouble);
         //System.out.println(taxExpected);
         Assert.assertEquals(taxRate.toString(),taxExpectedDouble, "zip code:" + postalCode + " state: " + regionCode);
+
 
        // System.out.println("Expected Rate is :"+ taxExpectedDouble +" , " + "Tax Actual is :  " + taxRate.toString() + " for zip code " + postalCode + " for state " + regionCode );
         //given().log().uri();
