@@ -89,9 +89,9 @@ public class AppTest extends BasicFuctions {
         //System.out.println(taxExpectedDouble);
         //System.out.println(taxAmountDouble);
         //System.out.println(taxExpected);
-        Assert.assertEquals(taxRate.toString(),taxExpectedDouble,"Expected Rate is : "+ taxExpectedDouble +" , " + "Tax Actual is :  " + taxRate.toString() + " for zip code " + postalCode + " for state " + regionCode);
+        Assert.assertEquals(taxRate.toString(),taxExpectedDouble,"Expected Rate is :"+ taxExpectedDouble +" , " + "Tax Actual is :" + taxRate.toString() + " for zip code:" + postalCode + " for state :" + regionCode);
 
-       // System.out.println("Expected Rate is : "+ taxExpectedDouble +" , " + "Tax Actual is :  " + taxRate.toString() + " for zip code " + postalCode + " for state " + regionCode );
+       // System.out.println("Expected Rate is :"+ taxExpectedDouble +" , " + "Tax Actual is :  " + taxRate.toString() + " for zip code " + postalCode + " for state " + regionCode );
         //given().log().uri();
 
 
