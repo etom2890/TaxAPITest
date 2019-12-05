@@ -25,7 +25,7 @@ public class BasicFuctions  {
         JSONObject newObject = new JSONObject();
         newObject.put("countryId", "US");
         newObject.put("regionId", regionId);
-        newObject.put("regionCode", regionCode);
+        //newObject.put("regionCode", regionCode);
         newObject.put("postcode", postalCode);
 
 

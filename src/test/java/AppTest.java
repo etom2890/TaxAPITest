@@ -25,12 +25,14 @@ public class AppTest extends BasicFuctions {
                               String cityRate, String specialRate, String riskLevel, String regionId) throws JSONException {
 
         double taxAmountDouble = Double.parseDouble(taxAmount);
-        String fileName = System.getProperty("fileName");
-        // System.out.println(fileName);
-        RestAssured.baseURI =fileName;
-        //"https://www.boxycharm.com/rest/default/V1/guest-carts/170ec3410ada340636eacaabe7fc47e8/shipping-information";
+        String uri = System.getProperty("fileName");
+
+        RestAssured.baseURI =uri;
+       // "https://www.boxycharm.com/rest/default/V1/guest-carts/170ec3410ada340636eacaabe7fc47e8/shipping-information";
         //"https://www.boxypreprod.com/rest/default/V1/guest-carts/2c59ebf17f877a03e3f7c6255d63c73b/shipping-information";
         //"https://www.boxytest.com/rest/default/V1/guest-carts/4c3dff414546fb4be2dacc3e9895416f/shipping-information";
+               // "https://test1.boxytest.com/rest/default/V1/guest-carts/4fc300225193eba48828a8a8014d88fc/shipping-information";
+        //"https://test1.boxytest.com/rest/default/V1/guest-carts/4fc300225193eba48828a8a8014d88fc/shipping-information";
         //"";
         RequestSpecification request = given().contentType("application/json");
         JSONObject newObject = prepareJsonObject(regionCode,postalCode,regionId);
@@ -46,13 +48,14 @@ public class AppTest extends BasicFuctions {
         ///System.out.println(response.asString());
         JSONObject obj_JSONObject = new JSONObject(test);
         Double taxRate = getTaxRate(obj_JSONObject);
-
+        System.out.println(taxAmountDouble*100);
+        System.out.println(taxRate);
 
         double taxExpected = taxAmountDouble * (float) 100;
         DecimalFormat df = new DecimalFormat("##.0###");
         String taxExpectedDouble = df.format(taxExpected);
         Assert.assertEquals(taxRate.toString(),taxExpectedDouble, "zip code:" + postalCode + " state: " + regionCode);
-
+        //Assert.
     }
 
 
